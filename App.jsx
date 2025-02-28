@@ -13,9 +13,10 @@ import Markdown from 'react-native-markdown-display';
 
 const App = () => {
 
-  // This⬇️API key is hardcoded ONLY FOR TESTING PURPOSES.
-  const API_KEY = 'AIzaSyD-uMcqFmkv878YkIriFDKCMx4CdokjGoE';
-  // IN PRODUCTION, I would have stored it securely in a .ENV file to prevent exposure.
+  // This API key is hardcoded ONLY FOR TESTING PURPOSES to ensure the app runs on mobile directly.  
+  const API_KEY = 'AIzaSyD-uMcqFmkv878YkIriFDKCMx4CdokjGoE';  
+  // IN PRODUCTION, I would have securely stored it in an .env file to prevent exposure.  
+
   
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
